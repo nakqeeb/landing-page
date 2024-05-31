@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/landing-page/static/css/main.d603289e.css",
+    "main.js": "/landing-page/static/js/main.f705f98d.js",
+    "static/js/453.7ee4257d.chunk.js": "/landing-page/static/js/453.7ee4257d.chunk.js",
+    "static/media/MobileMockup1.svg": "/landing-page/static/media/MobileMockup1.560de14fc656599b3496dba8a2c8fd84.svg",
+    "static/media/man3.jpg": "/landing-page/static/media/man3.aa9524478e0ca6fd773c.jpg",
+    "static/media/MobileMockup2.svg": "/landing-page/static/media/MobileMockup2.3df6589ecdb61c2157f55deb3b5bd1fb.svg",
+    "static/media/man1.webp": "/landing-page/static/media/man1.6db30f30942e6ec8216e.webp",
+    "static/media/man5.webp": "/landing-page/static/media/man5.1327ed006654aa8f4d1c.webp",
+    "static/media/airbnb.svg": "/landing-page/static/media/airbnb.26ed307cc754170fdeb3cc8e8569c6f3.svg",
+    "static/media/microsoft.svg": "/landing-page/static/media/microsoft.fb1ef7c6f9602e1f72f106b3530120b1.svg",
+    "static/media/amazon.svg": "/landing-page/static/media/amazon.59cef34d08d37bf5311c6065ef870054.svg",
+    "static/media/hubspot.svg": "/landing-page/static/media/hubspot.80285fa79d6a60890f40c601db950bbd.svg",
+    "static/media/google.svg": "/landing-page/static/media/google.aa7788471d918849ef48dee7269bc004.svg",
+    "static/media/fedex.svg": "/landing-page/static/media/fedex.9ee6952e952a3e92730f69a2d804abb5.svg",
+    "static/media/RocketLaunch.svg": "/landing-page/static/media/RocketLaunch.4864a0bebb0e5d12e7b6310e5b79bb6c.svg",
+    "index.html": "/landing-page/index.html",
+    "static/media/logo.svg": "/landing-page/static/media/logo.988beef01b786cd619f2481125cfb1cf.svg",
+    "main.d603289e.css.map": "/landing-page/static/css/main.d603289e.css.map",
+    "main.f705f98d.js.map": "/landing-page/static/js/main.f705f98d.js.map",
+    "453.7ee4257d.chunk.js.map": "/landing-page/static/js/453.7ee4257d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d603289e.css",
+    "static/js/main.f705f98d.js"
+  ]
+}
