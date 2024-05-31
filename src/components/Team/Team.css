@@ -1,0 +1,127 @@
+.team {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.team .container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.team .container .card {
+  background-color: var(--white-color);
+  width: 370px;
+  height: 450px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 34.85px 29.63px 48.34px 0 rgb(51 102 255 / 5%);
+  overflow: hidden;
+  text-align: center;
+}
+.team .container .card .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .container .card .image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255 255 255 / 20%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.team .container .card .image:hover::before {
+  animation: flashing 0.7s;
+}
+.team .container .card img {
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+  object-position: 100% 0;
+}
+.team .container .card .info {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.team .container .card .info .name {
+  margin: 0;
+}
+.team .container .card .info .job {
+  margin: 0;
+  margin-top: 10px;
+}
+.team .container .card hr {
+  background-color: #d8d8d8;
+  width: 100%;
+  height: 1px;
+  border: none;
+}
+.team .container .card .social-icons {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.team .container .card .social-icons .social-icon {
+  background-color: var(--green-color-alt);
+  border-radius: 50%;
+  padding: 8px;
+}
+@media (max-width: 992px) {
+  .team {
+    padding-top: var(--main-padding-tablet-top);
+    padding-bottom: var(--main-padding-tablet-bottom);
+  }
+  .team .container .card {
+    width: 213.33px;
+    height: 354px;
+  }
+  .team .container .card img {
+    width: 213.33px;
+    height: 173px;
+  }
+}
+@media (max-width: 768px) {
+  .team {
+    padding-top: var(--main-padding-tablet-top);
+    padding-bottom: var(--main-padding-tablet-bottom);
+  }
+  .team .container {
+    flex-direction: column;
+  }
+  .team .container .card {
+    width: 315px;
+    height: 459px;
+  }
+  .team .container .card img {
+    width: 370px;
+    height: 278px;
+  }
+}
+
+@keyframes flashing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}

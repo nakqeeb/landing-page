@@ -1,0 +1,105 @@
+.features {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.features .container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.features .container .card {
+  background-color: var(--white-color);
+  width: 370px;
+  height: 384px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  box-shadow: 34.85px 29.63px 48.34px 0 rgb(51 102 255 / 5%);
+  transition: transform var(--main-transition), box-shadow var(--main-transition);
+}
+.features .container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 34.85px 29.63px 48.34px 0 rgb(51 102 255 / 10%);
+}
+.features .container .card .upper {
+  width: 310px;
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.features .container .card .upper .icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features .container .card .upper .icon .font-icon {
+  width: 32px;
+  height: 32px;
+}
+.features .container .card .upper .title {
+  margin: 0;
+  text-align: center;
+}
+.features .container .card .upper .description {
+  margin: 0;
+  text-align: center;
+  color: var(--black-color-alt);
+  line-height: var(--line-height);
+}
+
+.features .container .card .down {
+  width: 118px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features .container .card .down a {
+  color: var(--green-color);
+}
+.features .container .card .down .learn-more-icon {
+  padding-left: 5px;
+}
+@media (max-width: 992px) {
+  .features {
+    padding-top: var(--main-padding-tablet-top);
+    padding-bottom: var(--main-padding-tablet-bottom);
+  }
+  .features .container {
+    flex-direction: column;
+  }
+  .features .container .card {
+    width: 680px;
+    height: 351px;
+  }
+  .features .container .card .upper {
+    width: 620px;
+    height: 211px;
+  }
+}
+@media (max-width: 768px) {
+  .features {
+    padding-top: var(--main-padding-mobile-top);
+    padding-bottom: var(--main-padding-mobile-bottom);
+  }
+  .features .container .card {
+    width: 315px;
+    height: 444px;
+  }
+  .features .container .card .upper {
+    width: 255px;
+    height: 304px;
+  }
+}

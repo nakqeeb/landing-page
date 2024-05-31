@@ -1,0 +1,29 @@
+.heading-title {
+  margin-bottom: 48px;
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+.heading-title .title {
+  margin: 0 auto 25px;
+  width: fit-content;
+  border-radius: 50px;
+  color: var(--black-color);
+}
+.heading-title .description {
+  color: var(--black-color-alt);
+  margin-bottom: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: var(--line-height);
+}
+/* @media (max-width: 767px) {
+  .heading-title {
+    margin-bottom: 24px;
+  }
+  .heading-title .description {
+    padding-left: var(--mobile-container-padding-left);
+    padding-right: var(--mobile-container-padding-right);
+  }
+} */

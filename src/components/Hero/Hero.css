@@ -1,0 +1,192 @@
+.hero {
+  margin-top: var(--header-height);
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+}
+.hero .container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .container .info {
+  width: 648px;
+  height: 358px;
+  max-width: 100%;
+}
+.hero .container .info .title {
+  margin: 0;
+  line-height: 1.4;
+}
+.hero .container .info .desc {
+  color: var(--black-color-alt);
+  line-height: 1.8;
+  margin: 25px 0;
+}
+.hero .container .get-started-btn {
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 221px;
+}
+.hero .container .how-works-btn {
+  background-color: var(--white-color);
+  width: 202px;
+  height: 60px;
+  border: 1px solid var(--green-color);
+  color: var(--green-color);
+  transition: var(--main-transition);
+}
+.hero .container .how-works-btn:hover {
+  background-color: #d4f4f0;
+}
+.hero .container .get-started-btn img {
+  margin-right: 7px;
+}
+.hero .container ul {
+  display: flex;
+  align-items: center;
+}
+.hero .container .graphics {
+  width: 450px;
+  height: 450px;
+}
+.hero .container .graphics .bg-circle {
+  width: 401px;
+  height: 401px;
+  background-color: #f2bfaf;
+  border-radius: 50%;
+  position: relative;
+}
+.hero .container .graphics .bg-circle > img {
+  /* width: 219px;
+    height: 422px; */
+  width: 284px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /* border-radius: 50px;
+  box-shadow: 10.56px 14.25px 20px 0 rgb(0 0 0 / 15%); */
+  animation: up-and-down 5s linear infinite;
+}
+.hero .container .graphics .bg-circle > img:hover {
+  animation-play-state: paused;
+}
+.hero .container .graphics .bg-circle .circle-regular {
+  border: 30px solid #009379;
+  border-radius: 50%;
+  width: 146px;
+  height: 146px;
+  position: absolute;
+  right: -15px;
+  top: 15px;
+}
+.hero .container .graphics .bg-circle .circle-dot {
+  border: 30px solid #ff6250;
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  position: absolute;
+  bottom: 109px;
+  left: -37px;
+}
+.hero .container .graphics .bg-circle .circle-star-1 {
+  color: #f8f9ff;
+  position: absolute;
+  top: 150px;
+  right: 25px;
+}
+.hero .container .graphics .bg-circle .circle-star-2 {
+  color: #f8f9ff;
+  position: absolute;
+  bottom: 110px;
+  left: 25px;
+}
+@media (max-width: 992px) {
+  .hero {
+    padding-top: var(--main-padding-tablet-top);
+    padding-bottom: var(--main-padding-tablet-bottom);
+  }
+  .hero .container {
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+    gap: 50px;
+  }
+  .hero .container .info {
+    text-align: center;
+  }
+  .hero .container ul {
+    justify-content: center;
+  }
+  .hero .container .how-works-btn {
+    display: none;
+  }
+  .hero .container .get-started-btn {
+    margin: 0;
+  }
+  .hero .container .graphics {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .container .graphics .bg-circle {
+    width: 285px;
+    height: 285px;
+  }
+  .hero .container .graphics .bg-circle > img {
+    /* width: 156px;
+    height: 300px; */
+    width: 195px;
+    height: 340px;
+  }
+  .hero .container .graphics .bg-circle .circle-regular {
+    width: 104px;
+    height: 104px;
+    border-width: 22px;
+  }
+  .hero .container .graphics .bg-circle .circle-dot {
+    width: 61px;
+    height: 61px;
+    border-width: 22px;
+    bottom: 55px;
+    left: -20px;
+  }
+  .hero .container .graphics .bg-circle .circle-star-1 {
+    width: 15px;
+    height: 15px;
+    top: 110px;
+  }
+  .hero .container .graphics .bg-circle .circle-star-2 {
+    width: 15px;
+    height: 15px;
+    bottom: 70px;
+    left: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: var(--header-mobile-height);
+    padding-top: var(--main-padding-mobile-top);
+    padding-bottom: var(--main-padding-mobile-bottom);
+  }
+}
+
+@keyframes up-and-down {
+  0%,
+  100% {
+    top: 40%;
+  }
+
+  50% {
+    top: 60%;
+  }
+}

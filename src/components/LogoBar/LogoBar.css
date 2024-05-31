@@ -1,0 +1,45 @@
+.logobar {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logobar .container {
+  /* width: 100%; */
+}
+.logobar .container .logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dotted #33475b;
+  border-bottom: 1px dotted #33475b;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 992px) {
+  .logobar {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .logobar .container .logos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .logobar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .logobar .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .logobar .container .logos {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
